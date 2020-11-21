@@ -46,6 +46,7 @@ For i = 2 To sheet_length
     percentage = Round(((CLS / OPN) - 1) * 100, 2)
     ws.Range("K" & summary_table_row).Value = percentage & "%"
     
+  'conditional formatting  
     Select Case Yearly_Change
 
 Case Is < 0
@@ -68,6 +69,5 @@ End Select
      End If
 Next i
 Next
-
   
 End Sub
